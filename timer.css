@@ -1,0 +1,127 @@
+body
+{
+   margin: 0px;
+   padding: 0px;
+   background-color:blueviolet;
+}
+#container{
+    height: 826px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    margin: auto;
+}
+.first_box{
+    height: 110px;
+    width: 400px;
+}
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:white;
+    text-align: center;
+}
+.second_box{
+    height:400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position: relative;
+}
+.second_box::before
+{
+height:400px;
+width:100%;
+background:url('bg4.jpg')no-repeat center center/cover;
+border-radius: 10px;
+content:"";
+position: absolute;
+top: 0px;
+left: 0px;
+z-index: -1;
+opacity: 0.9;
+}
+.box{
+    margin-top: 20px;
+}
+span{
+    font-size: 50px;
+    font-weight: bold;
+    color:red;
+}
+.span{
+    color:black;
+}
+#lap{
+    display: none;
+    height:100px;
+    width:300px;
+    text-align: center;
+    overflow-y:auto;
+}
+#btn1{
+    margin: 10px;
+    /* padding: 8px 32px; */
+    padding: 8px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue;
+    /* border-radius: 30px; */
+    border-radius: 50%;
+    color: white;
+
+    height: 80px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+    /* outline: none; */
+}
+#btn1:hover{
+    background-color: rgba(11, 240, 22, 0.932);
+}
+#btn2{
+    margin: 10px;
+    /* padding: 8px 25px; */
+    /* font-size: 30px; */
+
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+}
+#btn2:hover{
+    background-color: rgba(11, 240, 22, 0.932);
+}
+#btn0{
+    margin: 10px;
+    /* padding: 8px 25px; */
+    /* font-size: 30px; */
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: blue;
+    border-radius: 30px;
+    color: white;
+
+    height: 50px;
+    width: 80px;
+    border: none;
+    cursor: pointer;
+}
+#btn0:hover{
+    background-color: rgba(11, 240, 22, 0.932);
+}

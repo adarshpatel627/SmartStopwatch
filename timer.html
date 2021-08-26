@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+    <link rel="stylesheet" href="timer.css">
+    <script src="timer.js"></script>
+
+    <!-- <iframe src="sound.mp3" frameborder="0" width="0" height="0" ></iframe>  isame loop="true" property nahi lagti hai sayad ye ek baar hi kaam karta ho -->
+
+    <!-- <embed src="sound.mp3" loop="true" autostart="true" width="0" height="0" hidden="true" > </embed> -->
+
+    <!-- <audio src="sound.mp3" autoplay="autoplay" loop="true"></audio> -->
+
+    <!-- <audio autoplay="autoplay" loop="true" >
+        <source  src="sound.mp3"/>
+    </audio > -->
+    <!-- 
+ <audio controls="controls"   loop="true"  >
+        <source  src="sound.mp3"/>
+    </audio >  -->
+    <!-- kewal isi ko dono support karti hai.ye tab kaam karegi jab tak controls hidden n ho, matlab ye crome me tabhi kaam karegi jab controls ho -->
+
+</head>
+
+<body>
+    <div id="container">
+        <section class="first_box">
+            <h1>Smart Stopwatch</h1>
+        </section>
+        <section class="second_box">
+            <div id="display" class="box">
+                <span id="hour" class="span">00</span><span class="span">:</span>
+                <span id="minute" class="span">00</span><span class="span">:</span>
+                <span id="second" class="span">00</span><span>.</span>
+                <span id="millisecond">000</span>
+            </div>
+            <div id="lap">
+                <ol id="list_item"></ol>
+            </div>
+            <div id="button" class="box">
+                <button onclick="lap_time()" id="btn0">Lap</button>
+                <button onclick="start_time()" id="btn1">Start</button>
+                <button onclick="reset_time()" id="btn2">Reset</button>
+            </div>
+        </section>
+        <!-- <script src="timer.js"></script> -->
+    </div>
+
+</body>
+
+</html>
